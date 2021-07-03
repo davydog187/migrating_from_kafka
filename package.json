@@ -1,0 +1,27 @@
+{
+  "name": "migrating_from_kafka",
+  "version": "1.0.0",
+  "description": "Migrating from Kafka to RabbitMQ at SimpleBet: Why and How - RabbitMQ Summit 2021",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "watch": "marp -w talk/slides.md",
+    "html": "marp talk/slides.md -o index.html",
+    "server": "marp -s talk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davydog187/migrating_from_kafka.git"
+  },
+  "keywords": [
+    "kafka",
+    "rabbitmq"
+  ],
+  "author": "Dave Lucia",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/davydog187/migrating_from_kafka/issues"
+  },
+  "homepage": "https://github.com/davydog187/migrating_from_kafka#readme"
+}

@@ -1,0 +1,52 @@
+# Notes
+
+## Talk Description
+At Simplebet, we are striving to make every moment of every sporting event a betting opportunity. In doing so, we initially chose Kafka to deliver market updates. The result was a setup which was difficult and expensive to maintain, and non-trivial for our customers to integrate with. After researching other delivery mechanisms, we migrated to RabbitMQ, as it provided us with a low-cost, low-latency alternative that satisfied our business needs. Best of all, it provided a familiar, standards-based means of integration for our customers with superior flexibility to what Kafka offers.
+
+In this talk, we will cover the technical and business reasons for why RabbitMQ has proven itself to be a great platform for building a B2B SaaS product, how it compares to other tools on the market, and where it excels in flexibility for our customers.
+
+## The Story
+
+At Simplebet, we needed a way to deliver our market data to our enterprise customers with high-availability, low-latency, and flexibility. Kafka was initially chosen as the technology to deliver data to our customers, due to the perception of it being the fastest message queue availabile. As we started building out our Kafka-based integration, we began to realize just how difficult Kafka was to work with. Our pain points started when we began to build out our infrastructure, and had to answer hard questions about data separation between customers, topic-granularity, choosing managed vs self-hosted vs cloud-hosted, data retention, partitioning, Avro-schemas, etc. The best Kafka solutions are proprietary, and thus it necessitated either purchasing licenses for the proprietary pieces or choosing lower-quality OSS solutions. Onboarding a new customer meant that we needed to stand up new infrastructure just so all of the right Kafka peices were in place, and an integration-level topic didn't collide with some live data. The worst part about this, is that much of this complexity was pushed right onto our customers!
+
+As we were in talks with our first integration partner, it quickly became apparent that our customers were going to spend a lot of time working on integrating our product, which was directly against our goals of providing an intuitive development experience that was easy to work with with rapid feedback loops and a short development cycle. This is when we began exploring alternative solutions. 
+
+We took a hard look at two different paths. One was to use GraphQL Subscriptions to stream data over websockets. This seemed appealing due to the flexibility that GraphQL provides at the subscription level. That could have meant an interesting integration experience, but ulimately we didn't choose it because
+
+1. We felt that GraphQL may be too unfamiliar for some of our enterprise customers
+2. It meant that we still needed an internal solution to producing durable data
+
+When we originally picked Kafka, it was a hasty decision that didn't have the level of scrutiny that it deserved given the complexity that it introduced to our system and the integration experience. This time around we took a much closer look at what RabbitMQ had to offer, and we noticed many great properties that made it a great fit.
+
+1. RabbitMQ implements the AMQP 0-9-1 protocol, which abstracts away RabbitMQ itself, and provides a standards-based means of integration. 
+2. RabbitMQ and AMQP provide robust options for topologies that make it extensible, flexible, and easy to generate
+3. Using headers exchanges, customers can choose the level of granularity that they works best for their backend by declaring and binding queues based on a fixed set of headers that we describe in our documentation. Customers are no longer limited by any upfront architectural decisions we make at the time of publish, and instead rely on what works best for them
+4. RabbitMQ is relatively easy to deploy and manage (ease on our SRE team)
+5. We can easily generate new topologies when adding new customers with the RabbitMQ management APIs
+6. We can easily introspect our system and build tools ontop of rabbitmq using the same management APIs
+
+## Talking Points
+
+- Kafka used as a customer interface
+    - Hard to choose the topics
+        - Sport, League, Match, Market, how do we choose the granularity for which topics get created? This should be a preference decided by our customers. Kafka forces us to bake it into the architecture
+    - Difficult to work with
+        - Need to setup schema registry
+        - Work with Avro
+        - Choose a Kafka Library
+            - Difficult in Elixir as there are many and none have amazing support, very complex to work with
+            - Many that I tried had lots of bugs, that have since been fixed
+            - Maybe particular to Elixir ecosystem
+
+
+
+
+## Story arch
+1. Explain what Simplebet does as a company
+2. Describe the pricing product at a high-level
+3. Give context to the environment in which decisions were being made
+4. How we chose Kafka
+5. Describe the dilemmas we started seeing as we began talking to potential customers and building a deeper integration
+6. Re-evaluation: choosing RabbitMQ
+7. Show how RabbitMQ solves these dilemmas for us
+8. Questions
