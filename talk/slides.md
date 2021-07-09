@@ -92,7 +92,7 @@ Describe how we use machine learning
 ---
 # The Problem
 
-![fg 80%](/images/problem.jpg)
+![](/images/problem.jpg)
 
 <!--
 TODO unsplash image
