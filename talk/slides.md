@@ -61,16 +61,13 @@ Describe how we use machine learning
 ---
 ## Craft branded end-user experiences
 
-<!-- TODO show image of the FanDuel PlayAction -->
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/drive_result.png)
+
 ---
 ## Context
 * Early days of the company
 * Architecture 
 * Many open questions
-
-1. Building a Saas
-2. Dilemmas with Kafka
-3. Solutions w/ RabbitMQ
 
 <!-- TODO review this outline? -->
 ---
@@ -90,6 +87,24 @@ Describe how we use machine learning
 * :hammer_and_wrench: Durable
 
 ---
+# Kafka
+* High Throughput
+* Scalable
+* Permanent Storage
+* High Availability
+
+<!---
+These are the values of Kafka that attracted us to Kafka initially
+-->
+
+---
+# How we arrived at Kafka
+
+* Reputation for being fast
+* Customer integration story nascent
+
+
+---
 # The Problem
 
 ![w:600px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/problem.jpg)
@@ -100,9 +115,6 @@ TODO unsplash image
 Needed a means to 
 
 -->
-
----
-# How we arrived at Kafka
 
 ---
 # Deploying Kafka
