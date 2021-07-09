@@ -230,7 +230,7 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
 ### Partioning / Topic Strategy
-* Let the cusomer decide!
+* Let the customer decide!
 * E2E bindings
 * Headers dictate the flow of data
 
