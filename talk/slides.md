@@ -92,7 +92,7 @@ Describe how we use machine learning
 ---
 # The Problem
 
-![](/images/problem.jpg)
+![w:600px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/problem.jpg)
 
 <!--
 TODO unsplash image
