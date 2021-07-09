@@ -66,7 +66,7 @@ Describe how we use machine learning
 ---
 ## In the beginning...
 
-![bg right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/beginning.png)
+![bg right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/beginning.jpg)
 
 <!--
 * Early days of the company
@@ -74,8 +74,6 @@ Describe how we use machine learning
 * Many open questions
 -->
 
-<!-- TODO review this outline? -->
----
 ---
 ## Simplebet Data Pipeline
 * :satellite: Receive incident data
@@ -83,14 +81,7 @@ Describe how we use machine learning
 * :1234: Produce odds (Run through ML models :robot:)
 * :rocket: Publish markets
 
-<!-- Highlight the data flow of our application -->
----
-## Market Publishing Requirements
-* :white_check_mark: Customizeable per customer
-* :family_man_girl_girl: Fanout
-* :racing_car: Minimal latency
-* :hammer_and_wrench: Durable
-
+<!-- The last step, publish markets, we were not focusing on -->
 ---
 # The Problem
 
@@ -104,11 +95,15 @@ Describe how we use machine learning
 -->
 
 ---
+## Market Publishing Requirements
+* :white_check_mark: Customizeable per customer
+* :family_man_girl_girl: Fanout
+* :racing_car: Minimal latency
+* :hammer_and_wrench: Durable
+
+---
 # Kafka
-* High Throughput
-* Scalable
-* Permanent Storage
-* High Availability
+![w:600px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka.jpg)
 
 <!---
 These are the values of Kafka that attracted us to Kafka initially
@@ -118,8 +113,7 @@ These are the values of Kafka that attracted us to Kafka initially
 # How we arrived at Kafka
 
 * Reputation for being fast
-* Customer integration story nascent
-
+* Nascent customer integration story
 
 ---
 # Deploying Kafka
