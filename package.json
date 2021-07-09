@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Migrating from Kafka to RabbitMQ at SimpleBet: Why and How - RabbitMQ Summit 2021",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@marp-team/marp-cli": "^1.1.1"
+  },
   "scripts": {
     "watch": "marp -w talk/slides.md",
     "html": "marp talk/slides.md -o index.html",
