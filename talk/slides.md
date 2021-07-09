@@ -156,7 +156,7 @@ TODO talk with Max on these
 # Kafka Dilemma
 ## Delivering data a la carte
 
-![bg w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/buffet.jpg)
+![bg right w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/buffet.jpg)
 <!--
 * Customer packages (nfl \ mlb \ different markets)
 -->
@@ -234,12 +234,18 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 * E2E bindings
 * Headers dictate the flow of data
 
+---
+![bg w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+
+---
+# Questions?
+---
 
 
 
 ---
-## Disclaimer:
-### Kafka has its use cases
+<!---->## Disclaimer:
+### Kafka has its use cases -->
 
 <!-- Show a picture of Franz -->
 
