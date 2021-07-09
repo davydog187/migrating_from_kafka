@@ -50,3 +50,26 @@ When we originally picked Kafka, it was a hasty decision that didn't have the le
 6. Re-evaluation: choosing RabbitMQ
 7. Show how RabbitMQ solves these dilemmas for us
 8. Questions
+
+
+# Feedback
+* Keep it to a single sport
+* Who are our customers?
+* Besides Fanduel and data product, describe that we have a free to play product that takes bets
+  * Need to highlight the differences between our customers
+  * Maybe a visual system
+* Possibly mention CQRS/Event Sourcing?
+* use a different word than "fanout" on line 11 as it can be confused with the fanout exchange
+  * Possibly use "distribute" and "distributing" instead
+  * Our problem is distributing and filtering. How do we do it differently with Rabbit?
+* A visual representation of our data flow
+* It was at the 20 minute mark that i started talking about Rabbit
+  * Spend more time talking about Rabbit at the solution
+* Slide 13 "How we arrived at Kafka"
+  * I said what it can do, but i dont say what it is
+* Slide 14 "marcel said it good"
+* Drop "market type" on slide 17 as no one will know what that is
+* Give a glossary of terms for simplebet
+* Give a glossary of terms of Kafka
+* Before moving onto talking about RabbitMQ, give a summary of the problems that we had
+* Double check how the e2e bindings work, it might be wrong conceptually. If you publish to a fanout, pretty sure it does not look at headers? maybe?
