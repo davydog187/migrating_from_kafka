@@ -54,6 +54,9 @@ When we originally picked Kafka, it was a hasty decision that didn't have the le
 
 # Feedback
 * Keep it to a single sport
+* Simplebet - start by talking about freeroll, walk back from there to describe our data product
+* Rabbit solves the problem of distribution very elegantly, Kafka got in the way. Kafka made it complicated, RabbitMQ made it simple.
+* Change "Delivering data for integration (Replays)" -> "Delivering replay data for integration"
 * Who are our customers?
 * Besides Fanduel and data product, describe that we have a free to play product that takes bets
   * Need to highlight the differences between our customers
@@ -73,3 +76,16 @@ When we originally picked Kafka, it was a hasty decision that didn't have the le
 * Give a glossary of terms of Kafka
 * Before moving onto talking about RabbitMQ, give a summary of the problems that we had
 * Double check how the e2e bindings work, it might be wrong conceptually. If you publish to a fanout, pretty sure it does not look at headers? maybe?
+* Give a visual representation (maybe pull from rabbit)
+  * Exchange to exchagne links
+  * Exchange to queues
+  * Show how these enable filtering and distribution
+  * Show how this is trivial using RabbitMQ
+* Give a visual representation of what a V-host does and how easy it is to create
+
+* Drawn to the bright shiny object and how we were drawn to it, and then moved to the workhorse
+  * Typically brought up first in the conversation when talking about Message buses
+* Possibly consolidate the dilemma/solution to bring rabbitmq into the picture earlier
+* RabbitMQ doesn't have a schema registry, which is a good and bad thing. Maybe simpler!
+* Kafka is really expensive! Talk about that!
+* Put more emphasis on the consumers
