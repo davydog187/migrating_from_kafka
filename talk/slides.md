@@ -147,18 +147,16 @@ TODO talk with Max on these
 ---
 # Kafka Dilemma
 ## Partioning / Topic Strategy
-
-<!--
-One topic to rule them all?
-A topic per sports match?
-A topic per league?
-A topic per market type?
--->
+* Topic per customer?
+* Topic per match?
+* Topic per league?
+* Topic per market type?
 
 ---
 # Kafka Dilemma
 ## Delivering data a la carte
 
+![bg w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/buffet.jpg)
 <!--
 * Customer packages (nfl \ mlb \ different markets)
 -->
@@ -184,15 +182,62 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 # Kafka Dilemma
 ## Simplifying Integration
 
-- Avro
+- Avro / Schema Registry
 - Broker discovery
 - Delivering data for integration (Replays)
 ---
 
-# Re-evaluating our Integration
+### Re-evaluating our Integration
 
-![w:800px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
+
+---
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+* Integrations should be familiar
+* Customizeable
+* Easy to provision
+
+---
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+
+### Serialization
+* JSON
+
+---
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+
+### Authentication and Authorization
+* RabbitMQ Management Interface
+* V-Host per consumer
+
+---
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+
+### Data Retention
+* Durable / Quorum queues
+* Reads are destructive
+
+---
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+
+### Data a la carte
+* Publisher produce to a fanout exchange
+* E2E bindings
+* Headers dictate the flow of data
+
+---
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+
+### Partioning / Topic Strategy
+* Let the cusomer decide!
+* E2E bindings
+* Headers dictate the flow of data
+
+
+
+
+---
 ## Disclaimer:
 ### Kafka has its use cases
 
