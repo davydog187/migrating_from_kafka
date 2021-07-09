@@ -103,7 +103,7 @@ Describe how we use machine learning
 
 ---
 # Kafka
-![w:600px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka.jpg)
+![w:800px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka.png)
 
 <!---
 These are the values of Kafka that attracted us to Kafka initially
@@ -114,6 +114,11 @@ These are the values of Kafka that attracted us to Kafka initially
 
 * Reputation for being fast
 * Nascent customer integration story
+
+<!--
+Highlight that we picked Kafka because it seemed like a good enough 
+fit, but we really did not understand the needs of our customers yet
+-->
 
 ---
 # Deploying Kafka
@@ -127,9 +132,12 @@ These are the values of Kafka that attracted us to Kafka initially
 
 ---
 # Deploying per customer
+* Deployed a broker per customer
+	* Terraformed out a topic per customer
+
+<!--
 TODO talk with Max on these
-* Deployed a broker per customer (or was it just a topic?)
-* Terraformed out new infra for every customer to isolate
+-->
 
 ---
 # Kafka Dilemmas
@@ -151,16 +159,26 @@ A topic per market type?
 # Kafka Dilemma
 ## Delivering data a la carte
 
+<!--
+* Customer packages (nfl \ mlb \ different markets)
+-->
+
 ---
 # Kafka Dilemma
 ## Data Retention
 
-
+<!--
+* Once a message is written, it is readable for a long time after
+* This means that stale messages remain until they are dropped from the log by the broker
+-->
 
 ---
 # Kafka Dilemma
 ## Authentication and Authorization
 
+<!--
+RBAC control is offered for Kafka via the Confluent Metadata service
+-->
 
 ---
 # Kafka Dilemma
@@ -170,6 +188,10 @@ A topic per market type?
 - Broker discovery
 - Delivering data for integration (Replays)
 ---
+
+# Re-evaluating our Integration
+
+![w:800px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
 ## Disclaimer:
 ### Kafka has its use cases
@@ -181,4 +203,3 @@ A topic per market type?
 * Useful for linearity and many consumers
 * RabbitMQ is getting streams!
 -->
-
