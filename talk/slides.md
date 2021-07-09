@@ -64,10 +64,15 @@ Describe how we use machine learning
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/drive_result.png)
 
 ---
-## Context
+## In the beginning...
+
+![bg right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/beginning.png)
+
+<!--
 * Early days of the company
 * Architecture 
 * Many open questions
+-->
 
 <!-- TODO review this outline? -->
 ---
@@ -87,6 +92,18 @@ Describe how we use machine learning
 * :hammer_and_wrench: Durable
 
 ---
+# The Problem
+
+![w:600px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/problem.jpg)
+
+<!--
+* Needed a means to publish our data
+* Focused on building the core element of our product -->
+  * Integration with Machine learning
+  * Building a Rust ML framework
+-->
+
+---
 # Kafka
 * High Throughput
 * Scalable
@@ -103,18 +120,6 @@ These are the values of Kafka that attracted us to Kafka initially
 * Reputation for being fast
 * Customer integration story nascent
 
-
----
-# The Problem
-
-![w:600px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/problem.jpg)
-
-<!--
-TODO unsplash image
-
-Needed a means to 
-
--->
 
 ---
 # Deploying Kafka
