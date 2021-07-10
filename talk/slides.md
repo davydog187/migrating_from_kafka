@@ -27,17 +27,18 @@ _paginate: false
 * :heart: Elixir
 
 ---
-## What is Simplebet?
 
-<!-- TODO show Simplebet logo and or website-->
+![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/dogs.heic)
+![bg w:400px right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/owen.heic)
 
-![bg right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
-<!--
-Our mission is to power the future of fan engagement
--->
 ---
-## We turn every moment of a sports event into a betting opportunity
-<!-- TODO show image of the FanDuel PlayAction -->
+![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
+* Our mission is to power the future of fan engagement
+* Make every moment a betting opportunity
+---
+## Craft branded end-user experiences
+
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/drive_result.png)
 
 ---
 ## Odds as a service
@@ -59,11 +60,6 @@ Describe how we use machine learning
 2. Build features based of deep understanding of the game
 3. Refer to the ML panel
 -->
----
-## Craft branded end-user experiences
-
-![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/drive_result.png)
-
 ---
 ## In the beginning...
 
