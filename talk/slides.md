@@ -115,7 +115,7 @@ TODO highlight filtering an distribution
 
 ---
 # Kafka
-![w:800px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo.png)
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo.png)
 
 <!--
 Apache Kafka is an  distributed event streaming platform for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
@@ -123,7 +123,7 @@ Apache Kafka is an  distributed event streaming platform for high-performance da
 
 ---
 # Kafka
-![w:800px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_features.png)
+![bg right w:600px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_features.png)
 
 <!---
 These are the values of Kafka that attracted us to Kafka initially
