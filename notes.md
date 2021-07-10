@@ -89,3 +89,4 @@ When we originally picked Kafka, it was a hasty decision that didn't have the le
 * RabbitMQ doesn't have a schema registry, which is a good and bad thing. Maybe simpler!
 * Kafka is really expensive! Talk about that!
 * Put more emphasis on the consumers
+* RabbitMQ is the main entrypoint to our product, keep it as simple as possible
