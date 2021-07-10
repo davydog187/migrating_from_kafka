@@ -115,7 +115,7 @@ TODO highlight filtering an distribution
 
 ---
 # Kafka
-![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo.png)
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_trans.png)
 
 <!--
 Apache Kafka is an  distributed event streaming platform for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
