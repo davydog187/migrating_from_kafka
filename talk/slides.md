@@ -79,11 +79,11 @@ Describe how we use machine learning
 -->
 
 ---
-## Simplebet Data Pipeline
-* :satellite: Receive incident data
-* :chart_with_upwards_trend: Create markets
-* :1234: Produce odds :robot:
-* :rocket: Publish markets
+## Data Pipeline
+1. :satellite: Receive incident data
+2. :chart_with_upwards_trend: Create markets
+3. :1234: Produce odds :robot:
+4. :rocket: Publish markets
 
 <!-- The last step, publish markets, we were not focusing on -->
 ---
@@ -115,7 +115,10 @@ TODO highlight filtering an distribution
 
 ---
 # Kafka
-![w:800px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka.png)
+![w:800px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo.png)
+---
+# Kafka
+![w:800px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_features.png)
 
 <!---
 These are the values of Kafka that attracted us to Kafka initially
