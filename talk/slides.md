@@ -52,32 +52,29 @@ Explain what our free to play product is
 
 ---
 ## Odds as a service
-![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/selections.png)
+![bg right w:300px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/selections.png)
+
+Powered by Machine Learning :robot:
 
 <!-- 
 Explain who our customers our (Enterprise)
 Sport Coverage
 Real-time nature
--->
----
-## Powered by Machine-Learning
-
-<!-- 
-Possibly reference a slide from my Rust talk
 
 Describe how we use machine learning
 1. Years of historical data
 2. Build features based of deep understanding of the game
 3. Refer to the ML panel
 -->
+
 ---
 ## In the beginning...
 
 ![bg right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/beginning.jpg)
 
 <!--
-* Early days of the company
-* Architecture 
+* Story starts in the early days
+* We were building our initial archicture of the odds feed
 * Many open questions
 -->
 
@@ -96,9 +93,16 @@ Describe how we use machine learning
 
 <!--
 * Needed a means to publish our data
-* Focused on building the core element of our product -->
+* Focused on building the core element of our product
   * Integration with Machine learning
   * Building a Rust ML framework
+-->
+
+# Serving odds
+
+<!-- 
+TODO  a picture of our feed at a high level
+TODO highlight filtering an distribution
 -->
 
 ---
@@ -137,6 +141,11 @@ fit, but we really did not understand the needs of our customers yet
 4. Kafka UI
 5. Zookeeper 
 
+<!--
+You can use a managed solution
+
+BUT! you still need to deal with complexity locally
+-->
 ---
 # Deploying per customer
 * Deployed a broker per customer
