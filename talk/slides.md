@@ -31,6 +31,7 @@ _paginate: false
 
 <!-- TODO show Simplebet logo and or website-->
 
+![bg right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
 <!--
 Our mission is to power the future of fan engagement
 -->
@@ -77,8 +78,8 @@ Describe how we use machine learning
 ---
 ## Simplebet Data Pipeline
 * :satellite: Receive incident data
-* :chart_with_upwards_trend: Create markets (New Batter up to the plate!)
-* :1234: Produce odds (Run through ML models :robot:)
+* :chart_with_upwards_trend: Create markets
+* :1234: Produce odds :robot:
 * :rocket: Publish markets
 
 <!-- The last step, publish markets, we were not focusing on -->
