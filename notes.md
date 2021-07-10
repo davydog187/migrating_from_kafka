@@ -70,14 +70,14 @@ When we originally picked Kafka, it was a hasty decision that didn't have the le
   * Spend more time talking about Rabbit at the solution
 * Slide 13 "How we arrived at Kafka"
   * I said what it can do, but i dont say what it is
-* Slide 14 "marcel said it good"
+* Slide 14 "marcelo said it good"
 * Drop "market type" on slide 17 as no one will know what that is
 * Give a glossary of terms for simplebet
 * Give a glossary of terms of Kafka
 * Before moving onto talking about RabbitMQ, give a summary of the problems that we had
 * Double check how the e2e bindings work, it might be wrong conceptually. If you publish to a fanout, pretty sure it does not look at headers? maybe?
 * Give a visual representation (maybe pull from rabbit)
-  * Exchange to exchagne links
+  * Exchange to exchange links
   * Exchange to queues
   * Show how these enable filtering and distribution
   * Show how this is trivial using RabbitMQ
