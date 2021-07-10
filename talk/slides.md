@@ -28,21 +28,31 @@ _paginate: false
 
 ---
 
-![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/dogs.heic)
-![bg w:400px right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/owen.heic)
+![bg w:70%](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/dogs.jpg)
+
+![bg w:70%](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/owen.jpg)
 
 ---
 ![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
-* Our mission is to power the future of fan engagement
-* Make every moment a betting opportunity
+Our mission is to power the future of fan engagement
+
 ---
-## Craft branded end-user experiences
+![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
+
+Make every moment a betting opportunity
+
+---
+Craft branded end-user experiences
 
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/drive_result.png)
 
+<!-- 
+Explain what our free to play product is
+-->
+
 ---
 ## Odds as a service
-<!-- TODO show an image of our data -->
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/selections.png)
 
 <!-- 
 Explain who our customers our (Enterprise)
