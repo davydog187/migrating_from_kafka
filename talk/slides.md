@@ -23,7 +23,7 @@ _paginate: false
 
 <!-- color: white -->
 * VP, Engineering at Simplebet :basketball: :baseball: :football:
-* :dog: :dog: dad :baby: Dad
+* Husband, :dog: :dog: dad, :baby: Dad
 * :heart: Elixir
 
 ---
@@ -115,7 +115,7 @@ TODO highlight filtering an distribution
 
 ---
 # Kafka
-![bg right w:100px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_black.png)
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
 <!--
 Apache Kafka is an  distributed event streaming platform for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
@@ -143,7 +143,7 @@ fit, but we really did not understand the needs of our customers yet
 ---
 # Deploying Kafka
 
-## Moving Parts
+### Moving Parts
 1. Kafka Broker
 2. Kafka Rest Proxy
 3. Schema registry
@@ -154,41 +154,39 @@ fit, but we really did not understand the needs of our customers yet
 You can use a managed solution
 
 BUT! you still need to deal with complexity locally
--->
----
-# Deploying per customer
+Deploying per customer
 * Deployed a broker per customer
-	* Terraformed out a topic per customer
+* Terraformed out a topic per customer
 
-<!--
-TODO talk with Max on these
 -->
-
 ---
 # Kafka Dilemmas
 
 :warning: So what problems did we face? :warning:
 
 ---
-# Kafka Dilemma
-## Partioning / Topic Strategy
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+
+Partioning / Topic Strategy
+
 * Topic per customer?
 * Topic per match?
 * Topic per league?
-* Topic per market type?
 
 ---
-# Kafka Dilemma
-## Delivering data a la carte
 
-![bg right w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/buffet.jpg)
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+
+Delivering data a la carte
+
 <!--
 * Customer packages (nfl \ mlb \ different markets)
 -->
 
 ---
-# Kafka Dilemma
-## Data Retention
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+
+Data Retention
 
 <!--
 * Once a message is written, it is readable for a long time after
@@ -196,16 +194,18 @@ TODO talk with Max on these
 -->
 
 ---
-# Kafka Dilemma
-## Authentication and Authorization
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+
+Authentication and Authorization
 
 <!--
 RBAC control is offered for Kafka via the Confluent Metadata service
 -->
 
 ---
-# Kafka Dilemma
-## Simplifying Integration
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+
+Simplifying Integration
 
 - Avro / Schema Registry
 - Broker discovery
