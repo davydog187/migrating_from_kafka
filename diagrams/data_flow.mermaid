@@ -1,0 +1,18 @@
+graph TD
+    NFL((fa:fa-football-ball)) --> MB[[Message Bus]]
+    MLB((fa:fa-baseball-ball)) --> MB
+    NBA((fa:fa-basketball-ball)) --> MB
+    MB --> A[Customer A]
+    MB --> A
+    MB --> B[Customer B]
+    MB --> B
+    style NFL fill:#964B00,stroke:#333,stroke-width:4px
+    style MLB fill:white,stroke:#333,stroke-width:4px
+    style NBA fill:orange,stroke:#333,stroke-width:4px
+    style MB fill:#f9f,stroke:#333,stroke-width:4px
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    linkStyle 0,3 stroke:#964B00,stroke-width:3px;
+    linkStyle 1,6 stroke:red,stroke-width:3px;
+    linkStyle 2,4,5 stroke:orange,stroke-width:3px;
+
