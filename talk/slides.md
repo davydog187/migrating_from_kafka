@@ -148,6 +148,7 @@ fit, but we really did not understand the needs of our customers yet
 ### Diagram
 
 ![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+
 ---
 ![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
