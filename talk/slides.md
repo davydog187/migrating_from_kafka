@@ -110,7 +110,7 @@ TODO highlight filtering an distribution
 ---
 ## Market Publishing Requirements
 * :white_check_mark: Customizeable per customer
-* :family_man_girl_girl: Fanout
+* :family_man_girl_girl: Distributeable
 * :racing_car: Minimal latency
 * :hammer_and_wrench: Durable
 
@@ -123,15 +123,18 @@ Apache Kafka is an  distributed event streaming platform for high-performance da
 -->
 
 ---
-# Kafka
-![bg right w:600px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_features.png)
+![left w:550px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_features.png)
+
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+
 
 <!---
 These are the values of Kafka that attracted us to Kafka initially
 -->
 
 ---
-# How we arrived at Kafka
+### Choosing Kafka
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
 * Reputation for being fast
 * Nascent customer integration story
@@ -142,7 +145,16 @@ fit, but we really did not understand the needs of our customers yet
 -->
 
 ---
-# Deploying Kafka
+### Diagram
+
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+---
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+
+### :warning: Dilemmas :warning: 
+
+---
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
 ### Moving Parts
 1. Kafka Broker
@@ -161,14 +173,9 @@ Deploying per customer
 
 -->
 ---
-# Kafka Dilemmas
-
-:warning: So what problems did we face? :warning:
-
----
 ![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
-Partioning / Topic Strategy
+### Partioning / Topic Strategy
 
 * Topic per customer?
 * Topic per match?
@@ -178,7 +185,7 @@ Partioning / Topic Strategy
 
 ![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
-Delivering data a la carte
+### Delivering data a la carte
 
 <!--
 * Customer packages (nfl \ mlb \ different markets)
@@ -187,7 +194,7 @@ Delivering data a la carte
 ---
 ![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
-Data Retention
+### Data Retention
 
 <!--
 * Once a message is written, it is readable for a long time after
@@ -197,7 +204,7 @@ Data Retention
 ---
 ![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
-Authentication and Authorization
+### Authentication and Authorization
 
 <!--
 RBAC control is offered for Kafka via the Confluent Metadata service
@@ -206,11 +213,15 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 ---
 ![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
-Simplifying Integration
-
+### Customer Complexity
 - Avro / Schema Registry
-- Broker discovery
-- Delivering data for integration (Replays)
+- Managing offsets
+- Separation of integration data
+---
+
+![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
+
+### Summary
 ---
 
 ### Re-evaluating our Integration
@@ -223,6 +234,12 @@ Simplifying Integration
 * Integrations should be familiar
 * Customizeable
 * Easy to provision
+
+---
+
+### Diagram
+
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
 ---
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
@@ -260,6 +277,10 @@ Simplifying Integration
 * E2E bindings
 * Headers dictate the flow of data
 
+---
+# Summary
+
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 ---
 ![bg w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
