@@ -39,16 +39,13 @@ Our mission is to power the future of fan engagement
 ---
 ![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
 
-Make every moment a betting opportunity
+Make every moment a of a sporting event a betting opportunity
 
 ---
-Craft branded end-user experiences
+![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
 
-![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/drive_result.png)
+Micro Markets :football: :baseball: :basketball:
 
-<!-- 
-Explain what our free to play product is
--->
 
 ---
 ## Odds as a service
@@ -68,14 +65,12 @@ Describe how we use machine learning
 -->
 
 ---
-## In the beginning...
+Craft branded end-user experiences
 
-![bg right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/beginning.jpg)
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/drive_result.png)
 
-<!--
-* Story starts in the early days
-* We were building our initial archicture of the odds feed
-* Many open questions
+<!-- 
+Explain what our free to play product is
 -->
 
 ---
@@ -86,6 +81,18 @@ Describe how we use machine learning
 4. :rocket: Publish markets
 
 <!-- The last step, publish markets, we were not focusing on -->
+
+---
+## In the beginning...
+
+![bg right](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/beginning.jpg)
+
+<!--
+* Story starts in the early days
+* We were building our initial archicture of the odds feed
+* Many open questions
+-->
+
 ---
 # The Problem
 
@@ -275,15 +282,31 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 
 ### Partioning / Topic Strategy
 * Let the customer decide!
-* E2E bindings
+* Headers exchange bindings
 * Headers dictate the flow of data
 
 ---
 # Summary
 
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+
 ---
 ![bg w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+
+
+---
+# Why not kafka
+* Hard to use
+* Many features you don't get for free
+* Have to pay for features
+
+---
+
+# Why RabbitMQ 
+* Very easy to get started with
+* Batteries included
+* Whole package is free
+
 
 ---
 # Questions?

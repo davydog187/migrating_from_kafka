@@ -1,0 +1,21 @@
+graph TD
+    NFL((fa:fa-football-ball)) -->|topic NFL| MB[[Kafka Broker]]
+    MLB((fa:fa-baseball-ball)) -->|topic MLB| MB
+    NBA((fa:fa-basketball-ball)) -->|topic NBA| MB
+    MB -->|Mirror Maker| A[[Kafka Broker Customer A]]
+    MB -->|Mirror Maker| B[[Kafka Broker Customer B]]
+    B -->|Topic NFL| BConsumer((B))
+    B -->|Topic MLB| BConsumer
+    B -->|Topic NBA| BConsumer
+    A -->|Topic NFL| AConsumer((A))
+    A -->|Topic MLB| AConsumer
+    A -->|Topic NBA| AConsumer
+    style NFL fill:#964B00,stroke:#333,stroke-width:4px
+    style MLB fill:white,stroke:#333,stroke-width:4px
+    style NBA fill:orange,stroke:#333,stroke-width:4px
+    style MB fill:#f9f,stroke:#333,stroke-width:4px
+    style A fill:#ff,stroke:#333,stroke-width:4px
+    style AConsumer fill:#ff,stroke:#333,stroke-width:4px
+    style BConsumer fill:#ff15,stroke:#333,stroke-width:4px
+    style A fill:#ff,stroke:#333,stroke-width:2px
+    style B fill:#ff15,stroke:#333,stroke-width:2px
