@@ -40,6 +40,25 @@ When we originally picked Kafka, it was a hasty decision that didn't have the le
 
 
 
+## The Story (Inpso)
+Good tweet on story telling https://twitter.com/SahilBloom/status/1414202782538678273?s=20
+
+Once upon a time there was a _,
+Every day, _,
+One day _,
+Because of that _,
+Because of that _,
+Until finaly _.
+
+Once upon a time there was a sports betting company named Simplebet,
+Every day, they were working on building their initial produc,
+One day they chose Kafka to implement their customer facing interface,
+Because of that they had many issues managing the complexity of the system,
+Because of that they felt that they needed to re-evaluate,
+Until finaly, they found RabbitMQ, and all their problems were solved.
+`
+
+
 
 ## Story arch
 1. Explain what Simplebet does as a company
