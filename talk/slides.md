@@ -101,7 +101,7 @@ Describe how we use machine learning
 
 # Serving odds
 
-![w:600px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/diagrams/data_flow.png)
+![w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/diagrams/data_flow_2.png)
 <!-- 
 TODO  a picture of our feed at a high level
 TODO highlight filtering an distribution
