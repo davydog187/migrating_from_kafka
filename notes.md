@@ -109,3 +109,7 @@ Until finaly, they found RabbitMQ, and all their problems were solved.
 * Kafka is really expensive! Talk about that!
 * Put more emphasis on the consumers
 * RabbitMQ is the main entrypoint to our product, keep it as simple as possible
+
+* Kafka interface / libraries
+* Websockets/ SSE (Chunked HTTP) still need to build intermediate
+* AMQP was killer feature

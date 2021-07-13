@@ -23,14 +23,14 @@ _paginate: false
 
 <!-- color: white -->
 * VP, Engineering at Simplebet :basketball: :baseball: :football:
-* Husband, :dog: :dog: dad, :baby: Dad
 * :heart: Elixir
 
 ---
+## :dog: :dog: dad
+## :baby: dad
 
-![bg w:70%](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/dogs.jpg)
-
-![bg w:70%](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/owen.jpg)
+![bg right w:300px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/dogs.jpg)
+![bg w:300px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/owen.jpg)
 
 ---
 ![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
@@ -225,17 +225,29 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 - Avro / Schema Registry
 - Managing offsets
 - Separation of integration data
+- Kafka Protocol
 ---
 
 ![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
 ### Summary
+* Client needs to know Kafka
+* Multiple points of failure
+* Time to market
+* Adding complexity
+* Hard to use
+* Expensive
+
 ---
 
 ### Re-evaluating our Integration
 
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
+<!--
+* GraphQL
+* Websockets/streaming http still need to build intermediate
+-->
 
 ---
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
@@ -245,7 +257,7 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 
 ---
 
-### Diagram
+![w:500px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/diagrams/rabbit.png)
 
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
@@ -280,48 +292,34 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 ---
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
-### Partioning / Topic Strategy
+### Topic / Partioning Strategy
 * Let the customer decide!
 * Headers exchange bindings
 * Headers dictate the flow of data
 
 ---
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+
+### AMQP
+
+---
 # Summary
+* Batteries included
+* Lower cost
+* Higher reliability
+* Easier integration
+* Very easy to get started with
 
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
 ---
+
 ![bg w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
-
----
-# Why not kafka
-* Hard to use
-* Many features you don't get for free
-* Have to pay for features
-
 ---
 
-# Why RabbitMQ 
-* Very easy to get started with
-* Batteries included
-* Whole package is free
+![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
 
-
+# We're hiring
 ---
 # Questions?
----
-
-
-
----
-<!---->## Disclaimer:
-### Kafka has its use cases -->
-
-<!-- Show a picture of Franz -->
-
-<!-- 
-* Plenty of valid usecases for Kafka for large data volume
-* Useful for linearity and many consumers
-* RabbitMQ is getting streams!
--->
