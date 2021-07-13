@@ -1,0 +1,19 @@
+graph TD
+    NFL((fa:fa-football-ball)) --> |header NFL| vhost[[Internal V-Host]]
+    MLB((fa:fa-baseball-ball)) -->|header MLB| vhost
+    NBA((fa:fa-basketball-ball)) -->|header NBA| vhost
+    vhost --> exchange((Exchange))
+    exchange -->|Shovel bind MLB/NFL| A[[V-Host Customer A]]
+    exchange -->|Shovel bind NBA/NFL| B[[V-Host Customer B]]
+    B --> BConsumer((Exchange))
+    A --> AConsumer((Exchange))
+    style NFL fill:#964B00,stroke:#333,stroke-width:4px
+    style MLB fill:white,stroke:#333,stroke-width:4px
+    style NBA fill:orange,stroke:#333,stroke-width:4px
+    style vhost fill:#f9f,stroke:#333,stroke-width:4px
+    style exchange fill:#f9f,stroke:#333,stroke-width:4px
+    style A fill:#ff,stroke:#333,stroke-width:4px
+    style AConsumer fill:#ff,stroke:#333,stroke-width:4px
+    style BConsumer fill:#ff15,stroke:#333,stroke-width:4px
+    style A fill:#ff,stroke:#333,stroke-width:2px
+    style B fill:#ff15,stroke:#333,stroke-width:2px
