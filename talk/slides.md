@@ -137,16 +137,10 @@ Apache Kafka is an  distributed event streaming platform for high-performance da
 
 <!---
 These are the values of Kafka that attracted us to Kafka initially
--->
-
----
-### Choosing Kafka
-![bg right w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/kafka_logo_white2.png)
 
 * Reputation for being fast
 * Nascent customer integration story
 
-<!--
 Highlight that we picked Kafka because it seemed like a good enough 
 fit, but we really did not understand the needs of our customers yet
 -->
@@ -255,6 +249,11 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 * Easy to provision
 
 ---
+![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+* AMQP
+* RabbitMQ Management Interface
+* Plugin-based ecosystem 
+---
 
 ![w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/diagrams/rabbit.png)
 
@@ -307,13 +306,21 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 * Lower cost
 * Higher reliability
 * Easier integration
-* Very easy to get started with
+* Gentle learning curve
 
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
 ---
+# :heart:
 
-![bg w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
+![bg left w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png) 
+
+<!--
+Running in production since June of last year
+We now have multiple customers on rabbit
+Easy to provision new ones
+We've expanded the use of Rabbit internally
+-->
 
 ---
 
