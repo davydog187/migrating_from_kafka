@@ -320,5 +320,8 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 ![bg w:400px left](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/simplebet_green.png)
 
 # We're hiring
+
+https://jobs.lever.co/simplebet
+
 ---
 # Questions?
