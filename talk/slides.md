@@ -240,9 +240,8 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 
 ---
 
-### Re-evaluating our Integration
+# Re-evaluating our Integration
 
-![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
 <!--
 * GraphQL
@@ -257,7 +256,7 @@ RBAC control is offered for Kafka via the Confluent Metadata service
 
 ---
 
-![w:500px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/diagrams/rabbit.png)
+![w:400px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/diagrams/rabbit.png)
 
 ![bg left w:200px](https://raw.githubusercontent.com/davydog187/migrating_from_kafka/main/images/rabbit-logo.png)
 
